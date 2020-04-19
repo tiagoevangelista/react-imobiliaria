@@ -1,0 +1,179 @@
+@import 'var.scss';
+
+*, *::before, *::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html, body { 
+   font-family: $defaultFont; 
+   color: $darkGray; 
+   letter-spacing: $near;
+}
+
+li { list-style: none; }
+a { text-decoration: none; color: currentColor; transition: filter .3s ease; }
+label, input, button, select { font-family: $defaultFont; }
+button { border: none; cursor: pointer; transition: filter .3s ease; }
+h2, h3, h4 { font-weight: $medium; }
+button:hover, a:hover { filter: brightness(0.875); }
+
+#root {
+   min-height: 100vh;
+}
+
+
+/* ~~~~~ Buttons
+~~~~~~~~~~~~  */
+button.lowlighter {
+   background-image: $gradGray;
+}
+
+.btn-link {
+   display: inline-block;
+   color: $highlightColor;
+   margin: 0 10px;
+   padding: 10px 0;
+   text-transform: uppercase;
+   font-weight: 500;
+}
+
+.btn-full {
+   width: 100%;
+   padding: 16px;
+   margin: 0 auto;
+   display: block;
+   font-size: $px20;
+   margin-top: 29px;
+   font-weight: $medium;
+   background: #F0F0F0;
+   color: #a7a7a7;
+   border: 1px solid #E5E5E5;
+}
+
+.btn-round {
+   background-image: $gradRed;
+   color: #ffffff;
+   padding: 12px 28px;
+   border-radius: 100px;
+   text-transform: uppercase;
+   margin-left: 24px;
+   display: inline-block;
+}
+
+.btn-squircle {
+   background-image: $gradRed;
+   color: #ffffff;
+   border-radius: $rounded;
+   font-size: $px40;
+   padding: 14px 18px;
+   margin-left: 15px;
+}
+
+.container {
+   max-width: 1240px;
+   margin: 0 auto;
+   padding: 0 20px;
+}
+
+.container-large {
+   max-width: 92vw;
+   margin: 0 auto;
+}
+
+
+/* ~~~~~ Header
+~~~~~~~~~~~  */
+header {
+   background: #ffffff;
+   padding: 24px 20px;
+   border-bottom: 1px solid #e7e7e7;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+   transition: all 0.25s ease 0.015s;
+   
+   .container-large {
+       display: flex;
+       align-items: center;
+   }
+   
+   ul li { 
+       display: inline-block;
+       margin-right: 2vw;
+       
+       h3 { font-size: $px15; letter-spacing: $near; }
+       p { font-size: $px17; }
+   }
+   
+   .navigation {
+       flex: 1;
+       margin-left: auto; 
+       text-align: right;
+       .btn-underline {
+           margin: 0 0.8vw;
+       }
+       
+       .btn-round {
+           margin-left: .8vw;
+       }
+   }
+   .logo { 
+       margin-right: 2.8vw;
+       flex-shrink: 0;
+       img { width: 100%; transition: all 0.25s ease 0.015s; }
+   }
+}
+
+
+/* ~~~~~ Rodapé
+~~~~~~~~~~~  */
+footer {
+   background: $blueGray;
+   padding: 81px 0 123px 0;
+   
+   .container {
+       display: flex;
+       color: #ffffff;
+       
+       > div:not(:last-of-type) {
+           margin-right: 9vw;
+       }
+       
+       img {
+           margin-right: 3.8vw;
+       }
+       
+       ul {
+           font-size: $px17;
+           vertical-align: top;
+           display: inline-block;
+           a {
+               font-weight: $medium;
+               color: currentColor;
+               line-height: 1.6;
+           }
+           h3 { font-size: $px15; margin-bottom: 2px; }
+           p { opacity: 0.66; margin-bottom: 20px; }
+       }
+   }
+}
+
+
+/* ~~~~~ Copyright
+~~~~~~~~~~~~~~  */
+.copyright {
+   background: $darkBlueGray;
+   color: #8a969f;
+   font-size: $px17;
+   padding: 17px 36px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   
+   img { 
+       margin-left: 8px;
+       vertical-align: middle;
+   }
+}
