@@ -23,6 +23,21 @@ button:hover, a:hover { filter: brightness(0.875); }
    min-height: 100vh;
 }
 
+.dark-background {
+   background-image: $gradBlue;
+   padding: 110px 0 140px 0;
+   > .container { 
+       > h2 {
+           color: #ffffff;
+       }
+       
+       > h3 {
+           color: #ffffff;
+           opacity: 0.53;
+       }
+   }
+}
+
 
 /* ~~~~~ Buttons
 ~~~~~~~~~~~~  */

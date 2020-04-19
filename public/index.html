@@ -93,5 +93,18 @@
       <span>desenvolvido por <img src="/tplus.svg" alt="Tiago Evangelista | Web Designer & Front-end Developer"></span>
    </div>
    
+   <script>
+      const menu = document.querySelector('header');
+      window.onscroll = () => {
+         
+         if(window.scrollY > 0) {
+            menu.style.padding = "8px 20px"
+            menu.querySelector('img').style.width = "80%"
+         } else {
+            menu.style.padding = "24px 20px"
+            menu.querySelector('img').style.width = "100%"
+         }
+      }
+   </script>
 </body>
 </html>

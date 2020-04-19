@@ -1,5 +1,44 @@
 @import '../../var.scss';
 
+/* ~~~~~ General
+~~~~~~~~~~~~~ */
+.main-content {
+   padding: 96px 0;
+   > section, > section > div {
+       > h2 {
+           font-weight: $bold;
+           text-align: center;
+           font-size: $px30;
+           text-transform: uppercase;
+       }
+       
+       > h3 {
+           font-weight: $regular;
+           text-align: center;
+           font-size: $px16;
+           font-weight: 400;
+           text-transform: uppercase;
+           color: $mediumGray;
+           margin-bottom: 36px;
+       }
+   }
+}
+
+.separator {
+   width:100%;
+   height: 1px;
+   background:#dadada;
+   margin: 38px auto 102px auto;
+}
+
+.separator-duo {
+   width: 100%;
+   height: 24px;
+   margin-bottom: 120px;
+   background-image: linear-gradient(to right, $blueGray 50%, #DB4242 50%);
+}
+
+
 /* ~~~~~ Top Search
 ~~~~~~~~~~~~~~~  */
 .top-search {
@@ -23,6 +62,65 @@
    }
 }
 
+
+.filters-container {
+   background-image: $gradWhite;
+   border: 1px solid #F6F6F6;
+   border-radius: $rounded;
+   display: flex;
+   padding: 26px;
+   text-align: left;
+   box-shadow: 0 0 15px rgba(24, 47, 66, .3);
+   
+   .filters-box {
+       display: flex;
+       flex: 1;
+       
+   }
+   
+   label {
+       flex: 1;
+       font-weight: 500;
+       font-size: $px19;
+       margin-right: 22px;
+       
+       p { color: $darkGray; margin-bottom: 8px; }
+       
+       select, input {
+           width: 100%;
+       }
+   }
+   
+   input, select {
+       border-radius: $rounded;
+       border: 1px solid #D9D9D9;
+       padding: 11px 17px;
+       font-size: $px15;
+       font-weight: 500;
+       color: $darkGray;
+   }
+   
+}
+
+
+/* ~~~~~ Filters
+~~~~~~~~~~~~~ */
+.alert-notification {
+   margin-top: 164px;
+   position: relative;
+   height: 946px;
+   &::before {
+       content: '';
+       top: 0;
+       bottom: 0;
+       position: absolute;
+       display: block;
+       background: url('/buildings-background.jpg') center bottom;
+       background-size: cover;
+       width: 100%;
+       opacity: 0.13;
+   }
+}
 
 .filters-container {
    background-image: $gradWhite;
