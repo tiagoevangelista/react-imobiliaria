@@ -66,27 +66,7 @@ export default function Home() {
             <h3>Adicionados recentemente</h3>
             
             <div class="container-items">
-               <div class="item-box">
-                  <a href="#" class="item-page">
-                     <div class="item-image">
-                        <img src="/items/item1.jpg" alt="Casa Ribeirão Preto" />
-                     </div>
-                     <div class="item-type">
-                        <span class="property-type">Casa de condomínio</span>
-                        <span class="business-type">Comprar</span>
-                     </div>
-                     <div class="item-data">
-                        <h2 class="property-location"><strong>Ribeirão Preto</strong> (<span>Nova Aliança</span>)</h2>
-                        <p class="property-price">R$ <span>650.000,00</span></p>
-                        <div class="property-features">
-                           <strong>Área: <span class="feature-area">145m²</span></strong>
-                           <strong>Quartos: <span class="feature-bedroom">3</span></strong>
-                           <strong>Vagas: <span class="feature-garage">4</span></strong>
-                           <strong>Banheiros: <span class="toilet">3</span></strong>
-                        </div>
-                     </div>
-                  </a>
-               </div>
+               <Properties />
             </div>
             <button class="btn-full">carregar mais</button>
          </section>
@@ -110,16 +90,8 @@ export default function Home() {
             
             <div class="blog-container">
                
-               <div class="blog-post">
-                  <div class="post-image">
-                     <img src="/posts/post2.jpg" alt="Reparos em imóveis alugados" />
-                  </div>
-                  <div class="post-content">
-                     <a href="#"><h2>Reparos em imóveis alugados</h2></a>
-                     <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                     <a href="#" class="post-page">continuar lendo</a>
-                  </div>
-               </div>
+               <BlogPosts />
+
             </div>
          </section>
 

@@ -5,7 +5,7 @@ import './Properties.css'
 export default function Properties() {
    return(
       <div class="item-box">
-         <a href="#" class="item-page">
+         <a href="/" class="item-page">
             <div class="item-image">
                <img src="/items/item2.jpg" alt="Casa Ribeirão Preto" />
             </div>
