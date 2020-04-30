@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 import './styles.css'
 
 import Properties from '../../components/Properties'
@@ -16,24 +17,24 @@ export default function Home() {
             
             <div className="filters-container">
                <div className="filters-box">
-                  <label for="">
+                  <label htmlFor="">
                      <p>Tipo de busca</p>
                      <select>
-                        <option value="" disabled selected>Ex.: Alugar...</option>
+                        <option value="" disabled>Ex.: Alugar...</option>
                         <option value="comprar">Comprar</option>
                         <option value="alugar">Alugar</option>
                      </select>
                   </label>
-                  <label for="">
+                  <label htmlFor="">
                      <p>Tipo de busca</p>
-                     <select>
-                        <option value="" disabled selected>Ex.: Apartamento...</option>
+                     <select defaultValue="1">
+                        <option value="" disabled>Ex.: Apartamento...</option>
                         <option value="casa-padrao">Casa padrão</option>
                         <option value="casa-condominio">Casa de condomínio</option>
                         <option value="apartamento">Apartamento</option>
                      </select>
                   </label>
-                  <label for="">
+                  <label htmlFor="">
                      <p>Tipo de busca</p>
                      <input type="text" placeholder="Cidade ou Estado" />
                   </label>
@@ -48,47 +49,44 @@ export default function Home() {
          </div>
          </section>
 
-         <section class="main-content">
+         <section className="main-content">
         
-         <section class="container recommendations">
+         <section className="container recommendations">
             <h2>Sugestões para você</h2>
             <h3>Com base no seu histórico de buscas</h3>
             
-            <div class="container-items">
-               <Properties />
-            </div>
-            <button class="btn-full">carregar mais</button>
-            <div class="separator"></div>
+            <Properties />
+            
+            <button className="btn-full">carregar mais</button>
+            <div className="separator"></div>
          </section>
 
-         <section class="recently-added container">
+         <section className="recently-added container">
             <h2>Recentes</h2>
             <h3>Adicionados recentemente</h3>
             
-            <div class="container-items">
+            <div className="container-items">
                <Properties />
             </div>
-            <button class="btn-full">carregar mais</button>
+            <button className="btn-full">carregar mais</button>
          </section>
 
-         <section class="dark-background alert-notification">
-            <div class="container">
+         <section className="dark-background alert-notification">
+            <div className="container">
                <h2>Não achou o que procurava?</h2>
                <h3>Crie um alerta! Avisaremos quando houver o imóvel ideal para você</h3>
             
-               <form action="">
                
-               </form>
             </div>
          </section>
 
-         <div class="separator-duo"></div>
+         <div className="separator-duo"></div>
 
-         <section class="container">
+         <section className="container">
             <h2>Blog: Dicas</h2>
             <h3>Pra se dar bem na compra & lar</h3>
             
-            <div class="blog-container">
+            <div className="blog-container">
                
                <BlogPosts />
 
